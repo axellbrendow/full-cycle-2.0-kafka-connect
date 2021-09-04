@@ -16,3 +16,9 @@ Standalone workers have connectors inside them and inside the connectors there a
 
 ![](./images/kafka-connect-standalone-worker.png)
 
+## Distributed Workers
+
+With a cluster of distributed workers, you can divide the same task over multiple workers, each one reading from different partitions for example.
+
+![](./images/kafka-connect-distributed-workers.png)
+
