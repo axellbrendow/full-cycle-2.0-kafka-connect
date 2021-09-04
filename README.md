@@ -55,3 +55,12 @@ Now, go to Control Center (http://localhost:9021), Connect menu, upload mysql.pr
 
 Then you can go to the mysql-server.fullcycle.categories topic, in messages tab, and set the offset field to 0. You will see all messages in that topic. For now, the only one should be the insertion of the 'Electronics' category.
 
+Experiment inserting more data into MySQL:
+
+```sql
+insert into categories (name) values ('Kitchen');
+select * from categories;
+```
+
+![](./images/kafka-connect-mysql-topic.png)
+
