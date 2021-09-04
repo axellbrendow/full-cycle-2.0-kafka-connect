@@ -22,3 +22,9 @@ With a cluster of distributed workers, you can divide the same task over multipl
 
 ![](./images/kafka-connect-distributed-workers.png)
 
+## Converters
+
+Converters help you get data from one source, change it's format and send it to another source.
+
+![MySQL -> ResultSet -> JDBC Connector -> API format -> AvroConverter -> byte array -> Kafka -> byte array -> AvroConverter -> API format -> HDFS Sink Connector -> HDFS](./images/kafka-connect-converters.png)
+
