@@ -79,3 +79,23 @@ Explaining the document properties:
 - **after**: New value of this row in MySQL
 - **source**: Metadata about MySQL, the database and the table of this row
 
+### Learning about Kafka Connect Transformations
+
+As we only want the new value of the MySQL rows, we will extract only the **after** property.
+
+[Documentation of the extract field/value transformation](https://docs.confluent.io/platform/current/connect/transforms/extractfield.html)
+
+Steps to do that:
+
+- Delete fullcycle database in MongoDB
+- Delete MongoDB connector in Control Center
+- Uncomment the lines in mongodb.properties
+- In Control Center, Connect menu, upload mongodb.properties and launch this connector again.
+- Insert more data into MySQL
+
+```sql
+insert into categories (name) values ('Toys');
+select * from categories;
+```
+
+![Printscreen of the fullcycle database with a document with properties _id, id and name](./images/kafka-connect-mongo-express-extractfield.png)
