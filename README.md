@@ -10,3 +10,9 @@ With Kafka Connect you can get data from one place, store it on a topic, and fro
 
 ![Data Sources, Connectors, Sinks and Kafka](./images/kafka-connect-functioning.png)
 
+## Standalone worker
+
+Standalone workers have connectors inside them and inside the connectors there are tasks running to get data from one source and store it on another.
+
+![](./images/kafka-connect-standalone-worker.png)
+
