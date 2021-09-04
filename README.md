@@ -64,3 +64,18 @@ select * from categories;
 
 ![](./images/kafka-connect-mysql-topic.png)
 
+### Configuring MongoDB Connector
+
+Now, go to Control Center (http://localhost:9021), Connect menu, upload mongodb.properties and launch this connector.
+
+Then you can go to Mongo Express (http://localhost:8085), fullcycle database, View button.
+
+![Printscreen of the fullcycle database with a document with properties _id, before, after and source](./images/kafka-connect-mongo-express.png)
+
+Explaining the document properties:
+
+- **_id**: MongoDB generated value
+- **before**: Old value of this row in MySQL
+- **after**: New value of this row in MySQL
+- **source**: Metadata about MySQL, the database and the table of this row
+
